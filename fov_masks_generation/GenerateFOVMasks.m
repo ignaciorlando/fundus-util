@@ -29,6 +29,6 @@ for i = 1 : length(file_names)
     mask = get_fov_mask(I, threshold);
     
     % Save the mask
-    imwrite(mask, fullfile(folder_masks, strcat(strtok(file_names{i}, '.'), '_mask', '.gif')));
+    imwrite(mask, fullfile(folder_masks, strcat(strtok(file_names{i}, '.'), '.gif')));
     
 end
